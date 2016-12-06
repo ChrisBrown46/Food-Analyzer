@@ -30,16 +30,17 @@ for path, dir_list, file_list in os.walk(IMG_DIR + '/Image_Tags/'):
             for tag in tags:
                 tag_dictionary[tag] = 0
 
+total_tags_array = [key for key in tag_dictionary]
 open('Image_Tags.txt', 'w').close()
 f = open('Image_Tags.txt', 'a')
-f.write(json.dumps(tag_dictionary))
+f.write(json.dumps(total_tags_array))
 f.close()
 
 
 # Goes through all the files in 'Image_Tags' and changes
 # the JSON objects so they are 1's and 0's and correspond
 # to the large tag collection created prior.
-total_tags_array = [key for key in tag_dictionary]
+
 for path, dir_list, file_list in os.walk(IMG_DIR + '/Image_Tags/'):
     for tag_file in file_list:
         f = open(IMG_DIR + '/Image_Tags/' + tag_file, 'r')
