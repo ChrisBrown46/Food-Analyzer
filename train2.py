@@ -51,7 +51,12 @@ def train():
 
 #We'll need to change this fucntion so that we use the reform tags method of vectorizing
 def test():
-    clf2 = joblib.load('test.pkl')
+    clf2 = joblib.load('training.pkl')
+    tagFile = 'Image_Tags.txt'
+
+    f = open(tagFile)
+    tags = f.readline()
+    tags = ast.literal_eval(tags)
 
     testList = []
 
@@ -61,14 +66,21 @@ def test():
     for testFood in testOutput:
         testList.append(testFood['name'])
 
-    # to do - vecortize the image tags
+    #vectorize the tags we get from clarifai
+    for food in testList:
+        copyLIst = list(tags)
+        for n, i in enumerate(copyLIst):
+            if i in food:
+                copyLIst[n] = 1
+            else:
+                copyLIst[n] = 0
 
-    # print test1.shape
-    # prediction = clf2.predict(test1)
+    testData = np.reshape(copyLIst, (1, -1))
+    prediction = clf2.predict(testData)
 
-    #print prediction
-
-
+    print prediction
 
 
-train()
+
+
+test()
