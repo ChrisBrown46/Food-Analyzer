@@ -2,6 +2,7 @@
 
 import os, os.path
 import json
+import sys
 import numpy as np
 from sklearn import svm
 from sklearn.externals import joblib
@@ -26,3 +27,4 @@ def classify_file(filepath):
     sparse_array = np.array(sparse_array)
 
     return svc.predict(sparse_array)[0]
+print classify_file(sys.argv[1])
