@@ -8,7 +8,7 @@ from sklearn.externals import joblib
 
 
 # Variable must be changed to match the directory of image tags.
-IMG_DIR = 'D:/Personal/School/Third Year/CS 5600/Food Analyzer'
+IMG_DIR = '...'
 
 
 # Create the linear SVC
