@@ -7,7 +7,7 @@ import fnmatch
 import json
 
 # Variable must be changed to match the directory of image tags.
-IMG_DIR = 'D:/Personal/School/Third Year/CS 5600/Food Analyzer'
+IMG_DIR = '...'
 
 
 # Reads all files from 'Image_Tags' folder then generates
