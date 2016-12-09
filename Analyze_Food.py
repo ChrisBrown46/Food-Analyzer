@@ -10,7 +10,7 @@ from Create_Training_Data import generate_tags_for_image
 
 def classify_file(filepath):
     # First generate tags for the image, then open our SVC
-    # and super tag list up
+    # and super tag list
     output = generate_tags_for_image(filepath)
     svc = joblib.load('Training.pkl')
     tags = json.loads(open('Image_Tags.txt', 'r').read())

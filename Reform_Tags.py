@@ -7,7 +7,7 @@ import fnmatch
 import json
 
 # Variable must be changed to match the directory of image tags.
-IMG_DIR = '...'
+IMG_DIR = open('config', 'r').readlines()[3]
 
 
 # Reads all files from 'Image_Tags' folder then generates
