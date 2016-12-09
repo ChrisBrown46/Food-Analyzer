@@ -6,11 +6,7 @@ import os
 import fnmatch
 import json
 
-# Variable must be changed to match the directory of images being read.
-# The directory should contain folders with pictures of food inside of
-# each; in addition the sub-directories should be the name of the
-# food the pictures are of.
-
+# Variable must be changed to match the directory of image tags.
 IMG_DIR = 'D:/Personal/School/Third Year/CS 5600/Food Analyzer'
 
 
