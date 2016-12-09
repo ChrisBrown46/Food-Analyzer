@@ -36,5 +36,5 @@ svc.fit(X, Y)
 
 
 # Save the training in a pickle file
-joblib.dump(svc, 'training.pkl')
+joblib.dump(svc, 'Training.pkl')
 

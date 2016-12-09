@@ -12,7 +12,7 @@ def classify_file(filepath):
     # First generate tags for the image, then open our SVC
     # and super tag list up
     output = generate_tags_for_image(filepath)
-    svc = joblib.load('training.pkl')
+    svc = joblib.load('Training.pkl')
     tags = json.loads(open('Image_Tags.txt', 'r').read())
 
     # Turn our recieved tags into a sparse array that is
