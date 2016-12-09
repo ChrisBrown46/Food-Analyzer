@@ -9,3 +9,9 @@ To create your own testing data set for use, you will want to run 'Food_Analyzer
 To run this program, you must have Clarifai installed along with Python. To install Clarifai through pip, you can use 'pip install clarifai'. 
 Also, you are required to have a Clarifai account to process images. Simply replace the stubs in the config file with your own information. 
 You will also need to have a folder called 'Images' in the same directory as the file, with sub-folders in 'Images' with the food names. An example set-up can been seen on this github page. In addition, we provided the finished files needed to train the SVC, which can be used as references to help you build your own.
+
+An example config file will look like this:
+0000000000000000000000000-2-4_HHHHHHHHH_
+OOOOOOhhhhhOOOOOOOOOOOOHHHHjjjjjIIIIIIII
+OOOOOOOOOOOOOOOHHHHHHHHHHHHHHHHOOOOOOO_Q
+C:/Personal/Awesome_Programs/Best_One/Food Analyzer
