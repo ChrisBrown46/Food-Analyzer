@@ -13,7 +13,7 @@ from clarifai.rest import ClarifaiApp
 # each; in addition the sub-directories should be the name of the
 # food the pictures are of.
 
-IMG_DIR = 'D:/Personal/School/Third Year/CS 5600/Food Analyzer'
+IMG_DIR = '...'
 
 
 # GENERATE_TAGS_FOR_IMAGE Returns a list of tags taken from Clarifai
