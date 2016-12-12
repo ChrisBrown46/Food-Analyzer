@@ -6,13 +6,18 @@ import sys
 import numpy as np
 from sklearn import svm
 from sklearn.externals import joblib
-from Create_Training_Data import generate_tags_for_image
+from Create_Tags import generate_tags_for_image
+
+# Not ideal, but warnings are not relevant at the time.
+# Remove to see warnings and fix if issues occur
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning) 
 
 
-def classify_file(filepath):
+def classify_file(filepath, method):
     # First generate tags for the image, then open our SVC
     # and super tag list
-    output = generate_tags_for_image(filepath)
+    output = generate_tags_for_image(filepath, method)
     svc = joblib.load('Training.pkl')
     tags = json.loads(open('Image_Tags.txt', 'r').read())
 
@@ -27,4 +32,5 @@ def classify_file(filepath):
     sparse_array = np.array(sparse_array)
 
     return svc.predict(sparse_array)[0]
-print classify_file(sys.argv[1])
+
+print classify_file(sys.argv[1], sys.argv[2])

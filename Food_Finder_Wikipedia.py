@@ -31,4 +31,6 @@ def get_food_url(food = "Hamburger"):
     url = url[:]
 
     # Output the top result's url
-    return url
+    print url
+
+get_food_url(sys.argv[1])

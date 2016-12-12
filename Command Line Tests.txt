@@ -1,0 +1,6 @@
+python Analyze_Food.py http://www.cicis.com/media/1149/pizza_trad_cheese.png url
+
+python Analyze_Food.py Images/apple_pie/134.jpg file
+
+python Food_Finder_Wikipedia.py food
+(for 2nd example, use Akutagawa)
