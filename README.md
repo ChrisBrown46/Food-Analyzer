@@ -1,6 +1,15 @@
 # Food-Analyzer
 Project for CS 5600
 
+The purpose of this project is to: recognize food from images, report
+nutritional information of the food, and to provide
+recommendations for sides to the food. The program uses a Linear
+SVC to classify foods based on a list of image tags received from a
+third party API. Accuracy was measured by taking an image not used
+during training, and comparing the output from the SVM to the
+actual food name.
+
+
 To properly run the webpage, please see the next paragraph on how to setup the wikipedia page finder. The webpage is not hosted online, so you will be required to either upload it yourself, or run it on localhost.
 
 To properly use the wikipedia page finder, you will be required to have google's python api client installed. This can be done with 'pip install --upgrade google-api-python-client'. In addition, you will need a developer key from google which can be created by going to https://console.developers.google.com/ then creating an api key for 'customsearch'. After getting a key, put it in as the third line in the config file.
