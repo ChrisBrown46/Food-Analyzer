@@ -1,0 +1,92 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/github-dark.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Food-analyzer</title>
+  <meta name="description" content="Takes an image, then determines what food is displayed, analyzes the nutrition in the food, recommend sides, and displays a wiki link on the food.">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Food-analyzer</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Takes an image, then determines what food is displayed, analyzes the nutrition in the food, recommend sides, and displays a wiki link on the food.</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/ChrisBrown46/Food-Analyzer/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/ChrisBrown46/Food-Analyzer/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/ChrisBrown46/Food-Analyzer" class="code">View Food-analyzer on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a id="food-analyzer" class="anchor" href="#food-analyzer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Food-Analyzer</h1>
+
+<p>Project for CS 5600</p>
+
+<p>The purpose of this project is to: recognize food from images, report
+nutritional information of the food, and to provide
+recommendations for sides to the food. The program uses a Linear
+SVC to classify foods based on a list of image tags received from a
+third party API. Accuracy was measured by taking an image not used
+during training, and comparing the output from the SVM to the
+actual food name.</p>
+
+<p>To properly run the webpage, please see the next paragraph on how to setup the wikipedia page finder. The webpage is not hosted online, so you will be required to either upload it yourself, or run it on localhost.</p>
+
+<p>To properly use the wikipedia page finder, you will be required to have google's python api client installed. This can be done with 'pip install --upgrade google-api-python-client'. In addition, you will need a developer key from google which can be created by going to <a href="https://console.developers.google.com/">https://console.developers.google.com/</a> then creating an api key for 'customsearch'. After getting a key, put it in as the third line in the config file.</p>
+
+<p>To create your own testing data set for use, you will want to run 'Food_Analyzer.py'. This file contains methods needed to create data for the SVC to learn from. 
+To run this program, you must have Clarifai installed along with Python. To install Clarifai through pip, you can use 'pip install clarifai'. 
+Also, you are required to have a Clarifai account to process images. Simply replace the stubs in the config file with your own information. 
+You will also need to have a folder called 'Images' in the same directory as the file, with sub-folders in 'Images' with the food names. An example set-up can been seen on this github page. In addition, we provided the finished files needed to train the SVC, which can be used as references to help you build your own.</p>
+
+<p>An example config file will look like this (each chunck should be a line):</p>
+
+<p>0000000000000000000000000-2-4_HHHHHHHHH_</p>
+
+<p>OOOOOOhhhhhOOOOOOOOOOOOHHHHjjjjjIIIIIIII</p>
+
+<p>OOOOOOOOOOOOOOOHHHHHHHHHHHHHHHHOOOOOOO_Q</p>
+
+<p>C:/Personal/Awesome_Programs/Best_One/Food Analyzer</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/ChrisBrown46" class="avatar"><img src="https://avatars2.githubusercontent.com/u/12653812?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/ChrisBrown46">ChrisBrown46</a> maintains <a href="https://github.com/ChrisBrown46/Food-Analyzer">Food-analyzer</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/ChrisBrown46/Food-Analyzer/tarball/master" class="tar">tar</a><a href="https://github.com/ChrisBrown46/Food-Analyzer/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
