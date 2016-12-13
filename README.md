@@ -1,7 +1,5 @@
 # Food-Analyzer
-The purpose of this project is to: recognize food from images, report nutritional information of the food, and to provide recommendations for sides to the food. The program uses a Linear SVC to classify foods based on a list of image tags received from a third party API. Accuracy was measured by taking an image not used during training, and comparing the output from the SVM to the actual food name.
-
-
+Project for CS 5600
 
 To properly run the webpage, please see the next paragraph on how to setup the wikipedia page finder. The webpage is not hosted online, so you will be required to either upload it yourself, or run it on localhost.
 

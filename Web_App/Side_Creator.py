@@ -93,4 +93,3 @@ def get_sides(food):
         print food
     return side_list[food]
 
-get_sides(sys.argv[1])
